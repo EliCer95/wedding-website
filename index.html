@@ -4,12 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Language Selection</title>
-  </head>
+    <style>
+      body {
+        background-color: #2e4036;
+        color: #f3f2f1;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
+      h1 {
+        top: 15vw;
+        font-size: 7.77778vw;
+        line-height: 7.77778vw;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        padding: 0;
+      }
+
+      li {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        width: 100%;
+      }
+
+      a:hover {
+        font-size: smaller;
+      }
+
+      .flag {
+        font-size: 5vw;
+      }
+    </style>
+  </head>
   <body>
     <h1>
       Welcome<br />Bienvenue<br />
       Vítejte
     </h1>
+    <div id="language-container">
+      <ul id="language" class="language-list">
+        <li value="en" class="flag"><a href="homepage-en.html">🇬🇧</a></li>
+        <li value="fr" class="flag"><a href="homepage-fr.html">🇫🇷</a></li>
+        <li value="cz" class="flag"><a href="homepage-cz.html">🇨🇿</a></li>
+      </ul>
+    </div>
   </body>
 </html>
