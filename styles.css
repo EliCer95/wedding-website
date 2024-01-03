@@ -97,3 +97,19 @@ a.nav-link {
 .down-arrow img {
   max-width: 50px;
 }
+
+@media (max-width: 767px) {
+  h1 {
+    top: 40vh;
+    font-size: 40px;
+  }
+  .nav-links {
+    top: 40rem;
+  }
+}
+
+/* @media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+} */
