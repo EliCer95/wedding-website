@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP page</title>
+    <link href="/rsvp.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-bg">
+        <img src="./images/bg2.png" />
+      </div>
+      <h2 class="rsvp-title">
+        Prosím, vyplňte tento formulář nejpozději do 1. května!<br /><small
+          class="rsvp-subtitle"
+          >(stačí jednou za celou domácnost)</small
+        >
+      </h2>
+
+      <div class="flex-container">
+        <div class="flex-item home-link">
+          <a href="./homepage-cz.html">E<br />/<br />M</a>
+        </div>
+        <div class="flex-item">29<br />/<br />06</div>
+      </div>
+      <div class="navbar">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="./info-cz.html" class="nav-link">INFO</a>
+          </li>
+          <li class="nav-item">
+            <a href="./rsvp-cz.html" class="nav-link">RSVP</a>
+          </li>
+        </ul>
+      </div>
+      <div class="invitee-form">
+        <form
+          name="inviteeForm"
+          method="POST"
+          action="/pages/success"
+          data-netlify="true"
+        >
+          <ul>
+            <li>
+              <label for="name">Vaše celé jméno:</label><br /><input
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Vaše emailová adresa:</label><br />
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="diet">Speciální strava/alergie:</label><br />
+              <input type="text" name="diet" id="diet" />
+            </li>
+            <li>
+              <select id="response" name="response" required>
+                <option value="">Přijedeš?</option>
+                <option value="yes">Ano!</option>
+                <option value="maybe">Ještě nevím</option>
+                <option value="no">Ne..</option>
+              </select>
+            </li>
+            <li>
+              <select id="extras" name="extras" required>
+                <option value="">Kdo přijede s tebou?</option>
+                <option value="noone">Nikdo</option>
+                <option value="my+1">Moje +1</option>
+                <option value="kid(s)">Dítě/děti</option>
+                <option value="my+1 and kids">Moje +1 a dítě/děti</option>
+              </select>
+            </li>
+            <li>
+              <label for="msg"
+                >Ještě něco co bychom měli vědět? <br />(jména a
+                alergie/stravovací režim dalších účastníků)</label
+              ><br />
+              <textarea name="msg" id="msg"></textarea>
+            </li>
+            <li class="submit">
+              <button type="submit">Odeslat</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </header>
+    <footer>©2023 Eliska Cerna</footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP page</title>
+    <link href="/rsvp.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-bg">
+        <img src="./images/bg2.png" />
+      </div>
+      <h2 class="rsvp-title">
+        Please, fill out this form before May 1st!<br /><small
+          class="rsvp-subtitle"
+          >(you can fill it out only once per household)</small
+        >
+      </h2>
+
+      <div class="flex-container">
+        <div class="flex-item home-link">
+          <a href="./homepage-en.html">E<br />/<br />M</a>
+        </div>
+        <div class="flex-item">29<br />/<br />06</div>
+      </div>
+      <div class="navbar">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="./info-en.html" class="nav-link">INFO</a>
+          </li>
+          <li class="nav-item">
+            <a href="./rsvp-en.html" class="nav-link">RSVP</a>
+          </li>
+        </ul>
+      </div>
+      <div class="invitee-form">
+        <form
+          name="inviteeForm"
+          method="POST"
+          action="/pages/success"
+          data-netlify="true"
+        >
+          <ul>
+            <li>
+              <label for="name">Your full name:</label><br /><input
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Your email adress:</label><br />
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="diet">Diet/allergies:</label><br />
+              <input type="text" name="diet" id="diet" />
+            </li>
+            <li>
+              <select id="response" name="response" required>
+                <option value="">Are you coming?</option>
+                <option value="yes">Yes!</option>
+                <option value="maybe">Not sure yet</option>
+                <option value="no">No..</option>
+              </select>
+            </li>
+            <li>
+              <select id="extras" name="extras" required>
+                <option value="">Who is coming with you?</option>
+                <option value="noone">Noone</option>
+                <option value="my+1">My +1</option>
+                <option value="kid(s)">Kid(s)</option>
+                <option value="my+1 and kids">My +1 and kid(s)</option>
+              </select>
+            </li>
+            <li>
+              <label for="msg"
+                >Anything else we should know? <br />(names and alergies/diet of
+                the extras)</label
+              ><br />
+              <textarea name="msg" id="msg"></textarea>
+            </li>
+            <li class="submit">
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </header>
+    <footer>©2023 Eliska Cerna</footer>
+  </body>
+</html>
