@@ -33,6 +33,63 @@
           </li>
         </ul>
       </div>
+      <div class="invitee-form">
+        <form
+          name="inviteeForm"
+          method="POST"
+          action="/pages/success"
+          data-netlify="true"
+        >
+          <ul>
+            <li>
+              <label for="name">Ton nom complet:</label><br /><input
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Ton adresse e-mail:</label><br />
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="diet">Régime/allergies:</label><br />
+              <input type="text" name="diet" id="diet" />
+            </li>
+            <li>
+              <select id="response" name="response" required>
+                <option value="">Tu viens?</option>
+                <option value="yes">Oui!</option>
+                <option value="maybe">Pas encore sûre</option>
+                <option value="no">Non..</option>
+              </select>
+            </li>
+            <li>
+              <select id="extras" name="extras" required>
+                <option value="">Qui vient avec toi?</option>
+                <option value="noone">Personne</option>
+                <option value="my+1">Mon +1</option>
+                <option value="kid(s)">Enfant(s)</option>
+                <option value="my+1 and kids">
+                  Mon +1 et mon/mes enfant(s)
+                </option>
+              </select>
+            </li>
+            <li>
+              <label for="msg"
+                >Y a-t-il autre chose que nous devrions savoir ? <br />(noms et
+                allergies/régime alimentaire<br />
+                des personnes supplémentaires)</label
+              ><br />
+              <textarea name="msg" id="msg"></textarea>
+            </li>
+            <li class="submit">
+              <button type="submit">Envoyer</button>
+            </li>
+          </ul>
+        </form>
+      </div>
     </header>
     <footer>©2023 Eliska Cerna</footer>
   </body>

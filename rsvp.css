@@ -89,6 +89,63 @@ a.nav-link {
   max-width: 50px;
 }
 
+form {
+  margin-top: 5rem;
+}
+.invitee-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+form li {
+  margin: 1.5rem;
+}
+
+form input {
+  min-width: 300px;
+  min-height: 30px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.064);
+  background-color: #2e403631;
+}
+
+form textarea {
+  min-width: 300px;
+  min-height: 80px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.064);
+  background-color: #2e403631;
+}
+
+form select {
+  min-width: 300px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.064);
+  background-color: #2e403631;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+  background-color: #2e4036;
+  color: #f3f2f1;
+  transform: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f3f2f1;
+  color: #2e4036;
+  border: 1px solid #2e4036;
+}
+
 @media (max-width: 767px) {
   .nav-links {
     top: 40rem;

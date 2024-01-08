@@ -169,9 +169,6 @@ footer {
   .nav-links {
     top: 40rem;
   }
-}
-
-@media (max-width: 600px) {
   .flex-item {
     font-size: 16px;
   }
