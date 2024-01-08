@@ -1,0 +1,9 @@
+body {
+  background-color: #f3f2f1;
+  color: #2e4036;
+}
+
+header {
+  position: relative;
+  height: max-content;
+}
