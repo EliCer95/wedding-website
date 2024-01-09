@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="header-bg">
-        <img src="./images/bg2.png" />
+        <img src="./images/bg.png" />
       </div>
       <h2 class="rsvp-title">
         Prosím, vyplňte tento formulář nejpozději do 1. června!<br /><small
@@ -90,5 +90,13 @@
       </div>
     </header>
     <footer>©2023 Eliska Cerna</footer>
+    <script>
+      document.body.className += "js-loading";
+      window.addEventListener("load", showPage, false);
+
+      function showPage() {
+        document.body.className = document.body.className.replace("js-loading");
+      }
+    </script>
   </body>
 </html>

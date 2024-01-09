@@ -3,6 +3,10 @@ body {
   color: #2e4036;
 }
 
+.js-loading * {
+  animation-play-state: paused !important;
+}
+
 header {
   position: relative;
   height: max-content;
