@@ -113,6 +113,7 @@ footer {
   top: 40.86957vh;
   width: 80.43478vw;
   z-index: -1;
+  animation: fade-slide-down 2s ease-out forwards;
 }
 
 .nav-links {
@@ -176,6 +177,17 @@ footer {
   0% {
     opacity: 0;
     transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
   }
   100% {
     opacity: 1;

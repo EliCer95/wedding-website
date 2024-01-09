@@ -3,6 +3,10 @@ body {
   color: #2e4036;
 }
 
+.js-loading * {
+  animation-play-state: paused !important;
+}
+
 header {
   position: relative;
   height: max-content;
@@ -46,6 +50,7 @@ li.nav-item {
   display: inline-block;
   margin-left: 10vw;
   letter-spacing: 0.3vw;
+  animation: nav-load 2s ease-in-out;
 }
 
 .header-bg img {
@@ -54,6 +59,7 @@ li.nav-item {
   top: 40.86957vh;
   width: 80.43478vw;
   z-index: -1;
+  animation: fade-slide-down 2s ease-out forwards;
 }
 
 .flex-container {
@@ -65,6 +71,7 @@ li.nav-item {
 .flex-item {
   text-align: center;
   font-size: 23px;
+  animation: header-load 4s ease-in;
 }
 
 .nav-links {
@@ -82,6 +89,7 @@ li.nav-item {
   top: 8vw;
   margin-bottom: 0;
   line-height: 1em;
+  animation: header-load 3s ease-in-out;
 }
 
 .travel-info-wrapper {
@@ -89,6 +97,48 @@ li.nav-item {
   margin-bottom: 3rem;
   max-width: 60%;
   margin: 0 auto;
+  animation: fade-slide-up 2s 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes header-load {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateX(2000%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (max-width: 767px) {
